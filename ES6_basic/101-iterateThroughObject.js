@@ -1,13 +1,7 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let output = '';
-
-  for (const [index, item] of Object.entries(reportWithIterator)) {
-    output += `${item}`;
-
-    if (parseInt(index) !== reportWithIterator.length - 1) {
-      output += ' | ';
-    }
+  let employees = '';
+  for (const item of reportWithIterator) {
+    employees += `${item} | `;
   }
-
-  return output;
+  return employees.slice(0, -3);
 }
