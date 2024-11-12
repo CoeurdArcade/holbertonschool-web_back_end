@@ -1,12 +1,12 @@
-import Car from "./10-car";
+import Car from './10-car';
 
-export default class EVCar extends Car{
+export default class EVCar extends Car {
   constructor(brand, motor, color, range) {
     super(brand, motor, color);
     this._range = range;
   }
 
   cloneCar() {
-    return new Car();
+    return new Car(this._brand, this._color, this._motor);
   }
 }
