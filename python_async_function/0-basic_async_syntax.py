@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-""" Let's execute multiple coroutines at the same time with async """
-
+"""
+Basic async coroutine that waits for a random delay and returns it.
+"""
 import asyncio
 import random
-import typing
 
 
-async def async_generator() -> typing.Generator[float, None, None]:
-    """ Generate a random number every second """
-    for _ in range(10):
-        await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+async def wait_random(max_delay: int = 10) -> float:
+    """
+    Waits for a random delay between 0
+    and max_delay (included) and returns the delay.
+    """
+    delay = random.uniform(0, max_delay)
+    await asyncio.sleep(delay)
+    return delay
