@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
-"""Simple funct"""
+"""   Pagination
+Write a function named index_range that takes
+two integer arguments page and page_size."""
 
 import csv
 import math
-from typing import List
-index_range = __import__('0-simple_helper_function').index_range
+import requests
+from typing import Tuple, List
+
+
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """return tuple of size two containing a start index and an end index"""
+    return ((page - 1) * page_size, page * page_size)
 
 
 class Server:
@@ -27,14 +34,8 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """get_page"""
-        assert type(page) == int and page > 0
-        assert type(page_size) == int and page_size > 0
-
+        """return list with the correct pagination"""
+        assert type(page) is int and page > 0
+        assert type(page_size) is int and page_size > 0
         start, end = index_range(page, page_size)
-        res_list = []
-
-        if start >= len(self.dataset()):
-            return res_list
-        res_list = self.dataset()
-        return res_list[start:end]
+        return self.dataset()[start:end]
