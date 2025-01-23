@@ -266,3 +266,82 @@ If you are starting node from outside of the folder full_server, you will have t
 
 WARNING: Don’t forget to export your express app at the end of server.js (export default app;)
 	The database filename is passed as argument of the server.js BUT, for testing purpose, you should retrieve this filename at the execution (when getAllStudents or getAllStudentsByMajor are called for example)
+
+QUIZZZZZ
+
+What is NodeJS ?
+
+A JavaScript runtime. It allows Javascript to be executed outside the browser, thus the ability to do not only frontend but also backend development with JS.
+
+What does NPM stand for?
+
+Node Package Manager
+
+Node.js is built on which JavaScript engine?
+
+V8
+
+The difference between synchronous and asynchronous programming is that synchronous code blocks execution until tasks finish but asynchronous code does not.
+
+True
+
+What is Babel ?
+
+Babel is a popular JavaScript compiler that allows developers to write modern JavaScript (ES6+ and beyond) while ensuring compatibility with older browsers or environments that may not support the latest features. Babel achieves this by transpiling (converting) the modern code into an older version of JavaScript (e.g., ES5) that is widely supported.
+
+What is an HTTP server ?
+
+A server that processes HTTP requests and sends HTTP responses.
+
+What is ExpressJS ?
+
+A lightweight framework for building web applications and APIs in NodeJS.
+
+What is the purpose of middleware in ExpressJS ?
+
+To handle and process requests before sending a response.
+
+The correct statements about NodeJS !:
+
+is Open Source
+is Cross-platform
+is A JavaScript runtime environment that allows the execution of JS outside the browser.
+Gives the developers the possibility to write command line tools.
+Gives the developers the possibility to write server-side code (backend).
+
+What is asynchronous programming ?
+
+A programming model where tasks can run without blocking other operations.
+
+True statements about statically typed languages !:
+
+Statically typed programming languages are the languages in which the type of variables is declared (known) at the time of writing the code and cannot change and a variable type cannot be changed later on.
+Examples of Statically typed languages are: C, C++ and Java.
+The type checking of statically typed languages is done at compile-time.
+
+Which HTTP status code typically indicates a successful HTTP request?
+
+200
+
+What does the fs module in Node.js stand for ?
+
+File System
+
+What does the npm start command do ?
+
+It runs the script defined as "start" in the package.json file.
+
+What is the purpose of routes in ExpressJS ?
+
+To define how the server responds to specific HTTP requests.
+
+What is Nodemon ?
+
+A utility (tool) that automatically restarts a NodeJS application when file changes are detected. This process is called hot reloading.
+
+True statements about dynamically typed languages !:
+
+Dynamically typed languages are languages like Javascript, Ruby and Python
+In dynamically typed languages the types of variables are checked at runtime. (The type of a variable is checked automatically when the program runs).
+In dynamically typed languages we don't have to declare the type of each variable when we write the code.
+
